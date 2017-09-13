@@ -1,3 +1,7 @@
+# React Interview Questions
+---
+Below is a list of common React interview questions.
+
 #### What are the advantages of using React?
 - It is easy to know how a component is rendered, you just need to look at the render function.
 - JSX makes it easy to read the code of your components. It is also really easy to see the layout, or how components are plugged/combined with each other.
@@ -25,6 +29,8 @@ Container components are more concerned with how things work. These components p
 - `componentDidUpdate` - also commonly used to update the DOM in response to prop or state changes.
 - `componentWillUnmount` - here you can cancel any outgoing network requests, or remove all event listeners associated with the component.
 
+#### What are refs used for in React?
+
 #### What is a higher order component?
 
 A higher-order component is a function that takes a component and returns a new component. HOC's allow you to reuse code, logic and bootstrap abstraction. The most common is probably Redux’s `connect` function. Beyond simply sharing utility libraries and simple composition, HOCs are the best way to share behavior between React Components. If you find yourself writing a lot of code in different places that does the same thing, you may be able to refactor that code into a reusable HOC.
@@ -43,7 +49,7 @@ A higher-order component is a function that takes a component and returns a new 
 - When your component just receives props and renders them to the page, this is a 'stateless component', for which a pure function can be used. These are also called dumb components or presentational components.
 
 #### What advantages are there in using arrow functions?
-Scope safety: When arrow functions are used consistently, everything is guaranteed to use the same thisObject as the root. If even a single standard function callback is mixed in with a bunch of arrow functions there's a chance the scope will become messed up.
+Scope safety: Until arrow functions, every new function defined its own this value (a new object in the case of a constructor, undefined in strict mode function calls, the base object if the function is called as an "object method", etc.). An arrow function does not create its own this, the this value of the enclosing execution context is used. 
 Compactness: Arrow functions are easier to read and write.
 Clarity: When almost everything is an arrow function, any regular function immediately sticks out for defining the scope. A developer can always look up the next-higher function statement to see what the thisObject is.
 
@@ -87,14 +93,29 @@ A Component manages its own state internally. Besides setting an initial state, 
 
 A child class constructor cannot make use of `this` until `super()` has been called. Also, ES2015 class constructors have to call `super()` if they are subclasses. The reason for passing `props` to `super()` is to enable you to access `this.props` in the constructor.
 
-#### What is jsx?
+#### What is JSX?
 
-#### What does the following compile into?
+JSX is a syntax extension to JavaScript and comes with the full power of JavaScript. JSX produces React "elements". You can embed any JavaScript expression in JSX by wrapping it in curly braces. After compilation, JSX expressions become regular JavaScript objects. This means that you can use JSX inside of if statements and for loops, assign it to variables, accept it as arguments, and return it from functions:
+
+#### What is equivalent of the following using React.createElement?
+
+Question:
+
 ```
 const element = (
   <h1 className="greeting">
     Hello, world!
   </h1>
+);
+```
+
+Answer:
+
+```
+const element = React.createElement(
+  'h1',
+  {className: 'greeting'},
+  'Hello, world!'
 );
 ```
 
