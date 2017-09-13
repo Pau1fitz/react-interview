@@ -26,14 +26,26 @@ Container components are more concerned with how things work. These components p
 - `componentWillUnmount` - here you can cancel any outgoing network requests, or remove all event listeners associated with the component.
 
 #### What is a higher order component?
-A higher-order component is a function that takes a component and returns a new component
+
+A higher-order component is a function that takes a component and returns a new component. HOC's allow you to reuse code, logic and bootstrap abstraction. The most common is probably Redux’s `connect` function. Beyond simply sharing utility libraries and simple composition, HOCs are the best way to share behavior between React Components. If you find yourself writing a lot of code in different places that does the same thing, you may be able to refactor that code into a reusable HOC.
+
+<p>Exercises</p>
+
+----
+- Write an HOC that reverses it’s input
+- Write an HOC that supplies data from an API to it’s Passed Component
+- Write an HOC that implements shouldComponentUpdate to avoid reconciliation.
+- Write an HOC that uses React.Children.toArray to sort the children passed to it's Passed Component.
 
 #### What are the differences between a class component and functional component?
-Class components allows you to use additional features such as local state and lifecycle hooks. Also, to enable your component to have direct access to your store and thus holds state.
+- Class components allows you to use additional features such as local state and lifecycle hooks. Also, to enable your component to have direct access to your store and thus holds state.
 
-When your component just receives props and renders them to the page, this is a 'stateless component', for which a pure function can be used. These are also called dumb components or presentational components.
+- When your component just receives props and renders them to the page, this is a 'stateless component', for which a pure function can be used. These are also called dumb components or presentational components.
 
 #### What advantages are there in using arrow functions?
+Scope safety: When arrow functions are used consistently, everything is guaranteed to use the same thisObject as the root. If even a single standard function callback is mixed in with a bunch of arrow functions there's a chance the scope will become messed up.
+Compactness: Arrow functions are easier to read and write.
+Clarity: When almost everything is an arrow function, any regular function immediately sticks out for defining the scope. A developer can always look up the next-higher function statement to see what the thisObject is.
 
 #### What is redux?
 The basic idea of redux is that the entire application state is kept in a single store. The store is simply a javascript object. The only way to change the state is by firing actions from your application and then writing reducers for these actions that modify the state. The entire state transition is kept inside reducers and should not have any side-effects.
@@ -58,11 +70,22 @@ Returning null from a component's rendermethod does not affect the firing of the
 
 #### What are controlled components?
 
-#### What is the purpose of ejecting from create-react-app?
+In HTML, form elements such as `<input>`, `<textarea>`, and `<select>` typically maintain their own state and update it based on user input. When a user submits a form the values from the aforementioned elements are sent with the form. With React it works differently. The component containing the form will keep track of the value of the input in it's state and will re-render the component each time the callback function e.g. `onChange` is fired as the state will be updated. An input form element whose value is controlled by React in this way is called a "controlled component".
+
+#### What would you eject from create-react-app?
 
 #### What is the difference between state and props?
 
+The state is a data structure that starts with a default value when a Component mounts. It may be mutated across time, mostly as a result of user events.
+
+Props (short for properties) are a Component's configuration. They are received from above and immutable as far as the Component receiving them is concerned. A Component cannot change its props, but it is responsible for putting together the props of its child Components. Props do not have to just be data - callback functions may be passed in as props.
+
+
+A Component manages its own state internally. Besides setting an initial state, it has no business fiddling with the state of its children. You might conceptualize state as private to that component.
+
 #### What is the purpose of super(props)?
+
+A child class constructor cannot make use of `this` until `super()` has been called. Also, ES2015 class constructors have to call `super()` if they are subclasses. The reason for passing `props` to `super()` is to enable you to access `this.props` in the constructor.
 
 #### What is jsx?
 
@@ -75,9 +98,10 @@ const element = (
 );
 ```
 
-#### What don't you like about react?
 #### What is the difference between an element and a component?
 #### How does children work?
 #### What is a pure function?
 #### What is state in react?
 State is similar to props, but it is private and fully controlled by the component. 
+
+#### What don't you like about react?
