@@ -1,5 +1,5 @@
 # React Interview Questions
----
+
 Below is a list of common React interview questions.
 
 #### What are the advantages of using React?
