@@ -46,6 +46,8 @@ In HTML, form elements such as `<input>`, `<textarea>`, and `<select>` typically
 
 #### What are refs used for in React?
 
+Refs are used to get reference to a DOM node or an instance of a component in React. Good examples of when to use refs are for managing focus/text selection, triggering imperative animations, or integrating with third-party DOM libraries. You should avoid using string refs and inline ref callbacks. Callback refs are advised by React.
+
 #### What is a higher order component?
 
 A higher-order component is a function that takes a component and returns a new component. HOC's allow you to reuse code, logic and bootstrap abstraction. The most common is probably Redux’s `connect` function. Beyond simply sharing utility libraries and simple composition, HOCs are the best way to share behavior between React Components. If you find yourself writing a lot of code in different places that does the same thing, you may be able to refactor that code into a reusable HOC.
@@ -116,11 +118,17 @@ const element = React.createElement(
 );
 ```
 
-#### What is the difference between an element and a component?
-#### How does children work?
+
+#### What is `Children`?
+`this.props.children` is a prop that is passed to components automatically. There are a number of methods available in the React API to work with this `prop`. These include `React.Children.map`, `React.Children.forEach`, `React.Children.count`, `React.Children.only`, `React.Children.toArray`.
+
+
 #### What is a pure function?
+A pure function is a function that doesn't depend on and doesn't modify the states of variables out of its scope. Essentially, this means that a pure function will always return the same result given same parameters.
+
+
 #### What is state in react?
-State is similar to props, but it is private and fully controlled by the component. 
+State is similar to props, but it is private and fully controlled by the component. State is essentially an object that holds data and determines how the component renders and behaves.
 
 #### What would you eject from create-react-app?
 #### What don't you like about react?
