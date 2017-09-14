@@ -71,6 +71,8 @@ The basic idea of redux is that the entire application state is kept in a single
 
 #### How does react's connect method work?
 
+This is a 
+
 #### How does react router work?
 
 #### Why is it advised to pass a callback function to setState as opposed to an object?
