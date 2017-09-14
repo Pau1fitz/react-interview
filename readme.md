@@ -27,7 +27,7 @@ Below is a list of common React interview questions.
 - [What is a store in redux?](#what-is-a-store-in-redux)
 - [What is an action?](#what-is-an-action)
 - [What is a reducer?](#what-is-a-reducer)
-- [What is a pure function?](#what-is-redux-thunk-used-for)
+- [What is redux thunk used for?](#what-is-redux-thunk-used-for)
 - [What is a pure function?](#what-is-a-pure-function)
 - [What do you like about React?](#what-do-you-like-about-react)
 - [What don't you like about React?](#what-dont-you-like-about-react)
