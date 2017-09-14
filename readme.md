@@ -73,8 +73,6 @@ Because `this.props` and `this.state` may be updated asynchronously, you should 
 You can use property initializers to correctly bind callbacks. This is enabled by default in create react app.
 you can use an arrow function in the callback. The problem here is that a new callback is created each time the component renders.
 
-#### How can you conditionally render elements with react?
-
 #### How would you prevent a component from rendering?
 Returning null from a component's rendermethod does not affect the firing of the component's lifecycle methods.
 
@@ -118,7 +116,7 @@ const element = React.createElement(
 State is similar to props, but it is private and fully controlled by the component. State is essentially an object that holds data and determines how the component renders and behaves.
 
 #### What would you eject from create-react-app?
-#### What don't you like about react?
+Until you eject you are unable to configure webpack or babel presets.
 
 #### What is redux?
 The basic idea of redux is that the entire application state is kept in a single store. The store is simply a javascript object. The only way to change the state is by firing actions from your application and then writing reducers for these actions that modify the state. The entire state transition is kept inside reducers and should not have any side-effects.
@@ -144,3 +142,11 @@ Redux thunk is middleware that allows you to write action creators that return a
 
 #### What is a pure function?
 A pure function is a function that doesn't depend on and doesn't modify the states of variables out of its scope. Essentially, this means that a pure function will always return the same result given same parameters.
+
+
+#### What do you like about react?
+..... 
+
+#### What don't you like about react?
+.....
+
