@@ -88,7 +88,7 @@ A higher-order component is a function that takes a component and returns a new 
 
 ----
 - Write an HOC that reverses it’s input
-- Write an HOC that supplies data from an API to it’s Passed Component
+'- Write an HOC that supplies data from an API to it’s Passed Component
 - Write an HOC that implements shouldComponentUpdate to avoid reconciliation.
 - Write an HOC that uses React.Children.toArray to sort the children passed to it's Passed Component.
 
@@ -108,7 +108,7 @@ you can use an arrow function in the callback. The problem here is that a new ca
 #### How would you prevent a component from rendering?
 Returning null from a component's rendermethod does not affect the firing of the component's lifecycle methods.
 
-#### When rendering a list what is a key and what is its purpose?
+#### When rendering a list what is a key and what is it's purpose?
 Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity. The best way to pick a key is to use a string that uniquely identifies a list item among its siblings. Most often you would use IDs from your data as keys. When you don't have stable IDs for rendered items, you may use the item index as a key as a last resort. It is not recommend to use indexes for keys if the items can reorder, as that would be slow. 
 
 #### What is the purpose of super(props)?
