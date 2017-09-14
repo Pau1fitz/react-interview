@@ -153,7 +153,7 @@ Until you eject you are unable to configure webpack or babel presets.
 #### What is redux?
 The basic idea of redux is that the entire application state is kept in a single store. The store is simply a javascript object. The only way to change the state is by firing actions from your application and then writing reducers for these actions that modify the state. The entire state transition is kept inside reducers and should not have any side-effects.
 
-### What is a store in redux?
+#### What is a store in redux?
 
 The store is a javascript object that holds application state. Along with this it also has the following responsibilities:
 - Allows access to state via `getState()`;
@@ -161,7 +161,7 @@ The store is a javascript object that holds application state. Along with this i
 - Registers listeners via `subscribe(listener)`;
 - Handles unregistering of listeners via the function returned by `subscribe(listener)`.
 
-### What is an action?
+#### What is an action?
 Actions are plain javascript objects. They must have a type indicating the type of action being performed. In essence, actions are payloads of information that send data from your application to your store. 
 
 #### What is a reducer?
