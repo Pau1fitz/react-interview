@@ -4,6 +4,9 @@ Below is a list of common React interview questions.
 
 [How does React work?](#How-does-React-work)
 
+[How does React work?](#what-do-you-like-about-react)
+
+
 #### How does React work?
 React creates a virtual DOM. When state changes in a component it firstly runs a "diffing" algorithm, which identifies what has changed in the DOM. The second step is reconciliation, where it updates the DOM with the results of diff.
 
