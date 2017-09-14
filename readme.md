@@ -2,8 +2,8 @@
 
 Below is a list of common React interview questions.
 
-- [How does React work?](#How-does-React-work)
-- [What are the advantages of using React?](#what-are-the-advantages-of-using-React)
+- [How does React work?](#how-does-react-work)
+- [What are the advantages of using React?](#what-are-the-advantages-of-using-react)
 - [What is the difference between a Presentational component and a Container component?](#what-is-the-difference-between-a-presentational-component-and-a-container-component)
 - [What are the differences between a class component and functional component?](#what-are-the-differences-between-a-class-component-and-functional-component)
 - [What is the difference between state and props?](#what-is-the-difference-between-state-and-props)
