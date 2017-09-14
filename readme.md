@@ -7,7 +7,28 @@ Below is a list of common React interview questions.
 - [What is the difference between a Presentational component and a Container component?](#what-is-the-difference-between-a-presentational-component-and-a-container-component)
 - [What are the differences between a class component and functional component?](#what-are-the-differences-between-a-class-component-and-functional-component)
 - [What is the difference between state and props?](#what-is-the-difference-between-state-and-props)
-
+- [Name the different lifecycle methods?](#name-the-different-lifecycle-methods)
+- [Where in a React component should you make an AJAX request](#where-in-a-react-component-should-you-make-an-AJAX-request)
+- [What are controlled components?](#what-are-controlled-components)
+- [What are refs used for in React?](#what-are-refs-used-for-in-react)
+- [What is a higher order component?](#what-is-a-higher-order-component)
+- [What advantages are there in using arrow functions?](#what-advantages-are-there-in-using-arrow-functions)
+- [Why is it advised to pass a callback function to setState as opposed to an object?](#why-is-it-advised-to-pass-a-callback-function-to-setState-as-opposed-to-an-object)
+- [What is the alternative of binding `this` in the constructor?](#what-is-the-alternative-of-binding-this-in-the-constructor)
+- [How would you prevent a component from rendering?](#how-would-you-prevent-a-component-from-rendering)
+- [When rendering a list what is a key and what is its purpose?](#when-rendering-a-list-what-is-a-key-and-what-is-its-purpose)
+- [What is the purpose of super(props)?](#what-is-the-purpose-of-super(props))
+- [What is JSX?](#what-is-jsx)
+- [What is equivalent of the following using React.createElement?](#what-is-equivalent-of-the-following-using-React.createElement)
+- [What is `Children`?](#what-is-children)
+- [What is state in react?](#what-is-state-in-react)
+- [Why would you eject from create-react-app?](#why-would-you-eject-from-create-react-app)
+- [What is redux?](#what-is-redux)
+- [What is a store in redux?](#what-is-a-store-in-redux)
+- [What is an action?](#what-is-an-action)
+- [What is a reducer?](#what-is-a-reducer)
+- [What is a pure function?](#what-is-redux-thunk-used-for)
+- [What is a pure function?](#what-is-a-pure-function)
 - [What do you like about React?](#what-do-you-like-about-react)
 - [What don't you like about React?](#what-dont-you-like-about-react)
 
@@ -125,7 +146,7 @@ const element = React.createElement(
 #### What is state in react?
 State is similar to props, but it is private and fully controlled by the component. State is essentially an object that holds data and determines how the component renders and behaves.
 
-#### What would you eject from create-react-app?
+#### Why would you eject from create-react-app?
 Until you eject you are unable to configure webpack or babel presets.
 
 #### What is redux?
