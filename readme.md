@@ -66,15 +66,6 @@ Scope safety: Until arrow functions, every new function defined its own this val
 Compactness: Arrow functions are easier to read and write.
 Clarity: When almost everything is an arrow function, any regular function immediately sticks out for defining the scope. A developer can always look up the next-higher function statement to see what the thisObject is.
 
-#### What is redux?
-The basic idea of redux is that the entire application state is kept in a single store. The store is simply a javascript object. The only way to change the state is by firing actions from your application and then writing reducers for these actions that modify the state. The entire state transition is kept inside reducers and should not have any side-effects.
-
-#### How does react's connect method work?
-
-This is a 
-
-#### How does react router work?
-
 #### Why is it advised to pass a callback function to setState as opposed to an object?
 Because `this.props` and `this.state` may be updated asynchronously, you should not rely on their values for calculating the next state.
 
@@ -120,17 +111,36 @@ const element = React.createElement(
 );
 ```
 
-
 #### What is `Children`?
 `this.props.children` is a prop that is passed to components automatically. There are a number of methods available in the React API to work with this `prop`. These include `React.Children.map`, `React.Children.forEach`, `React.Children.count`, `React.Children.only`, `React.Children.toArray`.
-
-
-#### What is a pure function?
-A pure function is a function that doesn't depend on and doesn't modify the states of variables out of its scope. Essentially, this means that a pure function will always return the same result given same parameters.
-
 
 #### What is state in react?
 State is similar to props, but it is private and fully controlled by the component. State is essentially an object that holds data and determines how the component renders and behaves.
 
 #### What would you eject from create-react-app?
 #### What don't you like about react?
+
+#### What is redux?
+The basic idea of redux is that the entire application state is kept in a single store. The store is simply a javascript object. The only way to change the state is by firing actions from your application and then writing reducers for these actions that modify the state. The entire state transition is kept inside reducers and should not have any side-effects.
+
+### What is a store in redux?
+
+The store is a javascript object that holds application state. Along with this it also has the following responsibilities:
+- Allows access to state via `getState()`;
+- Allows state to be updated via `dispatch(action)`;
+- Registers listeners via `subscribe(listener)`;
+- Handles unregistering of listeners via the function returned by `subscribe(listener)`.
+
+### What is an action?
+Actions are plain javascript objects. They must have a type indicating the type of action being performed. In essence, actions are payloads of information that send data from your application to your store. 
+
+#### What is a reducer?
+
+A reducer is simply a pure function that takes the previous state and an action, and returns the next state.
+
+#### What is Redux Thunk used for?
+
+Redux thunk is middleware that allows you to write action creators that return a function instead of an action. The thunk can then be used to delay the dispatch of an action if a certain condition is met. This allows you to handle the asyncronous dispatching of actions. 
+
+#### What is a pure function?
+A pure function is a function that doesn't depend on and doesn't modify the states of variables out of its scope. Essentially, this means that a pure function will always return the same result given same parameters.
