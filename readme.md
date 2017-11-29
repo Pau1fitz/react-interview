@@ -191,6 +191,5 @@ A pure function is a function that doesn't depend on and doesn't modify the stat
 #### Example tests
 
 - [Sky Go Test](https://github.com/sky-uk/nowtv-react-interview)
-
 - [Etraveli](https://github.com/etraveli/work.at.etraveli/tree/master/frontend)
 
