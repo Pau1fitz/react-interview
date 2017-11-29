@@ -31,6 +31,7 @@ Below is a list of common React interview questions.
 - [What is a pure function?](#what-is-a-pure-function)
 - [What do you like about React?](#what-do-you-like-about-react)
 - [What don't you like about React?](#what-dont-you-like-about-react)
+- [Example projects](#example-projects)
 - [Example tests](#example-tests)
 
 
@@ -181,6 +182,11 @@ A pure function is a function that doesn't depend on and doesn't modify the stat
 
 #### What don't you like about react?
 .....
+
+#### Example projects
+
+- [React Spotify](https://github.com/Pau1fitz/react-spotify)
+- [React Spotify](https://github.com/andrewngu/sound-redux)
 
 #### Example tests
 
