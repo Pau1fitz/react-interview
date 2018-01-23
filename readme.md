@@ -8,7 +8,7 @@ Below is a list of common React interview questions.
 - [What are the differences between a class component and functional component?](#what-are-the-differences-between-a-class-component-and-functional-component)
 - [What is the difference between state and props?](#what-is-the-difference-between-state-and-props)
 - [Name the different lifecycle methods?](#name-the-different-lifecycle-methods)
-- [Where in a React component should you make an AJAX request](#where-in-a-react-component-should-you-make-an-AJAX-request)
+- [Where in a React component should you make an AJAX request?](#where-in-a-react-component-should-you-make-an-ajax-request)
 - [What are controlled components?](#what-are-controlled-components)
 - [What are refs used for in React?](#what-are-refs-used-for-in-react)
 - [What is a higher order component?](#what-is-a-higher-order-component)
