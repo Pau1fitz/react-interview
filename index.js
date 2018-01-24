@@ -11,5 +11,5 @@ class Example extends Component {
 
 ReactDOM.render(
   <Example />,
-  document.getElementById('container')
+  document.getElementById('app')
 );
