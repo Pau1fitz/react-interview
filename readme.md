@@ -2,7 +2,7 @@
 
 Below is a list of common React interview questions.
 
-See Chinese version [here](https://github.com/Pau1fitz/react-interview/blob/master/zh-cn.md) 
+See Chinese version [here](https://github.com/Pau1fitz/react-interview/blob/master/zh-cn.md). 
 
 - [How does React work?](#how-does-react-work)
 - [What are the advantages of using React?](#what-are-the-advantages-of-using-react)
