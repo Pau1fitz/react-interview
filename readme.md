@@ -64,7 +64,7 @@ Props (short for properties) are a Component's configuration. They are received 
 - `componentWillMount`- this is most commonly used for App configuration in your root component. 
 - `componentDidMount` - here you want to do all the setup you couldn’t do without a DOM, and start getting all the data you need. Also if you want to set up eventListeners etc. this lifecycle hook is a good place to do that.
 - `componentWillReceiveProps` - this lifecyclye acts on particular prop changes to trigger state transitions.
-- `shouldComponentUpdate` - if you’re worried about wasted renders `shouldComponentUpdate` is a great place to improve performance as it allows you to prevent a rerender if component receives new `prop`. shouldComponentUpdate should always return a boolean  and based on what this is will determine if the component is rerendered or not.
+- `shouldComponentUpdate` - if you’re worried about wasted renders `shouldComponentUpdate` is a great place to improve performance as it allows you to prevent a rerender if component receives new `prop`. `shouldComponentUpdate` should always return a boolean and based on what this is will determine if the component is rerendered or not.
 - `componentWillUpdate` - rarely used. It can be used instead of `componentWillReceiveProps` on a component that also has `shouldComponentUpdate` (but no access to previous props).
 - `componentDidUpdate` - also commonly used to update the DOM in response to prop or state changes.
 - `componentWillUnmount` - here you can cancel any outgoing network requests, or remove all event listeners associated with the component.
