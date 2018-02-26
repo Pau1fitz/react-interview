@@ -88,7 +88,7 @@ A higher-order component is a function that takes a component and returns a new 
 
 ----
 - Write an HOC that reverses it’s input
-'- Write an HOC that supplies data from an API to it’s Passed Component
+- Write an HOC that supplies data from an API to it’s Passed Component
 - Write an HOC that implements shouldComponentUpdate to avoid reconciliation.
 - Write an HOC that uses React.Children.toArray to sort the children passed to it's Passed Component.
 
