@@ -19,7 +19,7 @@ See Chinese version [here](https://github.com/Pau1fitz/react-interview/blob/mast
 - [What is the alternative of binding `this` in the constructor?](#what-is-the-alternative-of-binding-this-in-the-constructor)
 - [How would you prevent a component from rendering?](#how-would-you-prevent-a-component-from-rendering)
 - [When rendering a list what is a key and what is its purpose?](#when-rendering-a-list-what-is-a-key-and-what-is-its-purpose)
-- [What is the purpose of super(props)?](#what-is-the-purpose-of-super(props))
+- [What is the purpose of super(props)?](#what-is-the-purpose-of-superprops)
 - [What is JSX?](#what-is-jsx)
 - [What is equivalent of the following using React.createElement?](#what-is-equivalent-of-the-following-using-React.createElement)
 - [What is `Children`?](#what-is-children)
