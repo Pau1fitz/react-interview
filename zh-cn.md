@@ -132,7 +132,9 @@ const element = React.createElement(
 ```
 
 #### 何为 `Children`
-`this.props.children` 是自动传递给组件的属性。这个属性有许多可用的方法，包括 `React.Children.map`，`React.Children.forEach`， `React.Children.count`， `React.Children.only`，`React.Children.toArray`。
+在JSX表达式中，一个开始标签(比如`<a>`)和一个关闭标签(比如`</a>`)之间的内容会作为一个特殊的属性`props.children`被自动传递给包含着它的组件。
+
+这个属性有许多可用的方法，包括 `React.Children.map`，`React.Children.forEach`， `React.Children.count`， `React.Children.only`，`React.Children.toArray`。
 
 #### 在 React 中，何为 state
 State 和 props 类似，但它是私有的，并且完全由组件自身控制。State 本质上是一个持有数据，并决定组件如何渲染的对象。

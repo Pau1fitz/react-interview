@@ -144,7 +144,9 @@ const element = React.createElement(
 ```
 
 #### What is `Children`?
-`this.props.children` is a prop that is passed to components automatically. There are a number of methods available in the React API to work with this `prop`. These include `React.Children.map`, `React.Children.forEach`, `React.Children.count`, `React.Children.only`, `React.Children.toArray`.
+In JSX expressions that contain both an opening tag and a closing tag, the content between those tags is passed to components automatically as a special prop: `props.children`.
+
+There are a number of methods available in the React API to work with this `prop`. These include `React.Children.map`, `React.Children.forEach`, `React.Children.count`, `React.Children.only`, `React.Children.toArray`.
 
 #### What is state in react?
 State is similar to props, but it is private and fully controlled by the component. State is essentially an object that holds data and determines how the component renders and behaves.
