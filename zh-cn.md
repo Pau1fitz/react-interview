@@ -139,11 +139,11 @@ const element = React.createElement(
 #### 在 React 中，何为 state
 State 和 props 类似，但它是私有的，并且完全由组件自身控制。State 本质上是一个持有数据，并决定组件如何渲染的对象。
 
-#### 你为何排斥 create-react-app
-在你排斥之前，你并不能去配置 webpack 或 babel presets。
+#### 什么原因会促使你脱离 create-react-app 的依赖
+当你想去配置 webpack 或 babel presets。
 
 #### 何为 redux
-Redux 的基本思想是整个应用的 state 保持在一个单一的 store 中。store 就是一个简单的 javascript 对象，而改变应用 state 的唯一方式是在应用中触发 actions，然后为这些 actions 编写 reducers 来修改 state。整个 state 转化是在 reducers 中完成，并且不应该由任何副作用。
+Redux 的基本思想是整个应用的 state 保持在一个单一的 store 中。store 就是一个简单的 javascript 对象，而改变应用 state 的唯一方式是在应用中触发 actions，然后为这些 actions 编写 reducers 来修改 state。整个 state 转化是在 reducers 中完成，并且不应该有任何副作用。
 
 #### 在 Redux 中，何为 store
 Store 是一个 javascript 对象，它保存了整个应用的 state。与此同时，Store 也承担以下职责：
