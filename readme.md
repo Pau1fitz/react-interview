@@ -191,4 +191,7 @@ A pure function is a function that doesn't depend on and doesn't modify the stat
 - [React Spotify](https://github.com/Pau1fitz/react-spotify)
 - [React Soundcloud](https://github.com/andrewngu/sound-redux)
 
+#### Example Tests
+
+- [Senior React Dev Test](https://developerjobsboard.co.uk/2018/07/28/an-example-senior-react-redux-developer-task/)
 
