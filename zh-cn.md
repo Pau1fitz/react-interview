@@ -174,3 +174,6 @@ Redux thunk 是一个允许你编写返回一个函数而不是一个 action 的
 #### 示例项目
 * [React Spotify](https://github.com/Pau1fitz/react-spotify)
 * [React Soundcloud](https://github.com/andrewngu/sound-redux)
+
+#### 示例测试
+* [Senior React Dev Test](https://developerjobsboard.co.uk/2018/07/28/an-example-senior-react-redux-developer-task/)
