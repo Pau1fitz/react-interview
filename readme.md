@@ -118,7 +118,7 @@ shouldComponentUpdate(nextProps, nextState){
 }
 ```
 Or using React.PureComponent instead of React.Component
-React.PureComponent implements shouldComponentUpdate() with a shallow prop and state comparison. So you can avoid re-rendering the component with the same props and state.
+React.PureComponent implements `shouldComponentUpdate()` with a shallow prop and state comparison. This enables you to avoid re-rendering the component with the same props and state.
 #### When rendering a list what is a key and what is it's purpose?
 Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity. The best way to pick a key is to use a string that uniquely identifies a list item among its siblings. Most often you would use IDs from your data as keys. When you don't have stable IDs for rendered items, you may use the item index as a key as a last resort. It is not recommend to use indexes for keys if the items can reorder, as that would be slow. 
 
