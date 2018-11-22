@@ -108,7 +108,7 @@ You can use property initializers to correctly bind callbacks. This is enabled b
 you can use an arrow function in the callback. The problem here is that a new callback is created each time the component renders.
 
 #### How would you prevent a component from rendering?
-Returning null from a component's render method hide the component, but it does not affect the firing of the component's lifecycle methods. 
+Returning null from a component's render method means nothing will be displayed, but it does not affect the firing of the component's lifecycle methods. 
 
 If the amount of the component re-rendering is an issue,  there are two options available. Manually implementing a check in shouldComponentUpdate lifecycle method hook. 
 ```
