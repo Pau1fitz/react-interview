@@ -110,7 +110,7 @@ you can use an arrow function in the callback. The problem here is that a new ca
 #### How would you prevent a component from rendering?
 Returning null from a component's render method means nothing will be displayed, but it does not affect the firing of the component's lifecycle methods. 
 
-If the amount of the component re-rendering is an issue,  there are two options available. Manually implementing a check in shouldComponentUpdate lifecycle method hook. 
+If the amount of times the component re-renders is an issue, there are two options available. Manually implementing a check in `shouldComponentUpdate` lifecycle method hook. 
 ```
 shouldComponentUpdate(nextProps, nextState){
   // Do some check here
