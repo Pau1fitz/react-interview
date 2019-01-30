@@ -63,13 +63,13 @@ The state is a data structure that starts with a default value when a Component 
 Props (short for properties) are a Component's configuration. They are received from above and immutable as far as the Component receiving them is concerned. A Component cannot change its props, but it is responsible for putting together the props of its child Components. Props do not have to just be data - callback functions may be passed in as props.
 
 #### Name the different lifecycle methods.
-- `componentWillMount`- this is most commonly used for App configuration in your root component. 
+- `componentWillMount` (deprecated) - this is most commonly used for App configuration in your root component. 
 - `componentDidMount` - here you want to do all the setup you couldn’t do without a DOM, and start getting all the data you need. Also if you want to set up eventListeners etc. this lifecycle hook is a good place to do that.
-- `componentWillReceiveProps` - this lifecyclye acts on particular prop changes to trigger state transitions.
-- `shouldComponentUpdate` - if you’re worried about wasted renders `shouldComponentUpdate` is a great place to improve performance as it allows you to prevent a rerender if component receives new `prop`. `shouldComponentUpdate` should always return a boolean and based on what this is will determine if the component is rerendered or not.
-- `componentWillUpdate` - rarely used. It can be used instead of `componentWillReceiveProps` on a component that also has `shouldComponentUpdate` (but no access to previous props).
+- `componentWillReceiveProps` (deprecated)  - this lifecyclye acts on particular prop changes to trigger state transitions.
+- `shouldComponentUpdate`  - if you’re worried about wasted renders `shouldComponentUpdate` is a great place to improve performance as it allows you to prevent a rerender if component receives new `prop`. `shouldComponentUpdate` should always return a boolean and based on what this is will determine if the component is rerendered or not.
+- `componentWillUpdate` (deprecated) - rarely used. It can be used instead of `componentWillReceiveProps` on a component that also has `shouldComponentUpdate` (but no access to previous props).
 - `componentDidUpdate` - also commonly used to update the DOM in response to prop or state changes.
-- `componentWillUnmount` - here you can cancel any outgoing network requests, or remove all event listeners associated with the component.
+- `componentWillUnmount` (deprecated) - here you can cancel any outgoing network requests, or remove all event listeners associated with the component.
 
 #### Where in a React component should you make an AJAX request?
 `componentDidMount` is where an AJAX request should be made in a React component. This method will be executed when the component “mounts” (is added to the DOM) for the first time. This method is only executed once during the component’s life. Importantly, you can’t guarantee the AJAX request will have resolved before the component mounts. If it doesn't, that would mean that you’d be trying to setState on an unmounted component, which would not work. Making your AJAX request in `componentDidMount` will guarantee that there’s a component to update.
