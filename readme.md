@@ -42,7 +42,7 @@ React creates a virtual DOM. When state changes in a component it firstly runs a
 #### What are the advantages of using React?
 - It is easy to know how a component is rendered, you just need to look at the render function.
 - JSX makes it easy to read the code of your components. It is also really easy to see the layout, or how components are plugged/combined with each other.
-- You can render React on the server-side. This enables improves SEO and performance.
+- You can render React on the server-side. This improves SEO and performance.
 - It is easy to test.
 - You can use React with any framework (Backbone.js, Angular.js) as it is only a view layer.
 
