@@ -164,7 +164,7 @@ State is similar to props, but it is private and fully controlled by the compone
 Until you eject you are unable to configure webpack or babel presets.
 
 #### What is redux?
-The basic idea of redux is that the entire application state is kept in a single store. The store is simply a javascript object. The only way to change the state is by firing actions from your application and then writing reducers for these actions that modify the state. The entire state transition is kept inside reducers and should not have any side-effects.
+The basic idea of redux is that the entire application state is kept in a single store. The store is simply a javascript object. The only way to change the state is by sending actions from your application and then writing reducers for these actions that modify the state. The entire state transition is kept inside reducers and should not have any side-effects.
 
 #### What is a store in redux?
 
