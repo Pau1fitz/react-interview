@@ -10,6 +10,7 @@ See Chinese version [here](https://github.com/Pau1fitz/react-interview/blob/mast
 - [What are the differences between a class component and functional component?](#what-are-the-differences-between-a-class-component-and-functional-component)
 - [What is the difference between state and props?](#what-is-the-difference-between-state-and-props)
 - [Name the different lifecycle methods?](#name-the-different-lifecycle-methods)
+- [React hooks](#react-hooks)
 - [Where in a React component should you make an AJAX request?](#where-in-a-react-component-should-you-make-an-ajax-request)
 - [What are controlled components?](#what-are-controlled-components)
 - [What are refs used for in React?](#what-are-refs-used-for-in-react)
@@ -70,6 +71,27 @@ Props (short for properties) are a Component's configuration. They are received 
 - `componentWillUpdate` (deprecated) - rarely used. It can be used instead of `componentWillReceiveProps` on a component that also has `shouldComponentUpdate` (but no access to previous props).
 - `componentDidUpdate` - also commonly used to update the DOM in response to prop or state changes.
 - `componentWillUnmount` - enables you can cancel any outgoing network requests, or remove all event listeners associated with the component.
+
+#### React Hooks
+Hooks let you use more of React’s features without having to use classes.
+The first hook that you will most likely encounter is `useState`. `useState` is a Hook that lets you add React state to function components. It returns an array with a getter and a setter. The syntax looks like `const [count, setCount] = React.useState(0);`. The equivalent when using a class component would be.
+
+```js
+this.state = {
+  count: 0
+};
+    
+<button onClick={() => this.setState({ count: this.state.count + 1 })}>
+  Increase Count
+</button>
+```
+The next hook you will most likely encounter is `useEffect`. The Effect Hook lets you perform side effects in function components. By passing an empty array as the second argument to `useEffect` is equivalent to using `componentDidMount`. If you pass a value to the array it will only call the `useEffect` function when the value in the array updates.
+
+```js
+useEffect(() => {
+  // do stuff when the component mounts
+}, []);
+```
 
 #### Where in a React component should you make an AJAX request?
 `componentDidMount` is where an AJAX request should be made in a React component. This method will be executed when the component “mounts” (is added to the DOM) for the first time. This method is only executed once during the component’s life. Importantly, you can’t guarantee the AJAX request will have resolved before the component mounts. If it doesn't, that would mean that you’d be trying to setState on an unmounted component, which would not work. Making your AJAX request in `componentDidMount` will guarantee that there is a component to update.
