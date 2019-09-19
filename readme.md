@@ -9,7 +9,7 @@ See Chinese version [here](https://github.com/Pau1fitz/react-interview/blob/mast
 - [What is the difference between a Presentational component and a Container component?](#what-is-the-difference-between-a-presentational-component-and-a-container-component)
 - [What are the differences between a class component and functional component?](#what-are-the-differences-between-a-class-component-and-functional-component)
 - [What is the difference between state and props?](#what-is-the-difference-between-state-and-props)
-- [Name the different lifecycle methods?](#name-the-different-lifecycle-methods)
+- [What are the different lifecycle methods?](#what-are-the-different-lifecycle-methods)
 - [React hooks](#react-hooks)
 - [Where in a React component should you make an AJAX request?](#where-in-a-react-component-should-you-make-an-ajax-request)
 - [What are controlled components?](#what-are-controlled-components)
@@ -63,7 +63,7 @@ State is a data structure that starts with a default value when a Component moun
 
 Props (short for properties) are a Component's configuration. They are received from above and immutable as far as the Component receiving them is concerned. A Component cannot change its props, but it is responsible for putting together the props of its child Components. Props do not have to just be data - callback functions may be passed in as props.
 
-#### Name the different lifecycle methods.
+#### What are the different lifecycle methods?
 - `componentWillMount` (deprecated) - this is most commonly used for App configuration in your root component. 
 - `componentDidMount` - here you want to do all the setup you couldn’t do without a DOM, and start getting all the data you need. Also if you want to set up eventListeners etc. this lifecycle hook is a good place to do that.
 - `componentWillReceiveProps` (deprecated)  - this lifecyclye acts on particular prop changes to trigger state transitions.
