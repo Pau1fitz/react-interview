@@ -9,6 +9,12 @@ class Example extends Component {
   )
 }
 
+const Example = () => (
+  <section>
+    <p>Hello World!</p>
+  </section>
+)
+
 ReactDOM.render(
   <Example />,
   document.getElementById('app')
