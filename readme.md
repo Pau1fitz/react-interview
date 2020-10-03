@@ -63,6 +63,35 @@ State is a data structure that starts with a default value when a Component moun
 
 Props (short for properties) are a Component's configuration. They are received from above and immutable as far as the Component receiving them is concerned. A Component cannot change its props, but it is responsible for putting together the props of its child Components. Props do not have to just be data - callback functions may be passed in as props.
 
+Difference between State and Props
+
+1.	
+Props are read-only.
+State changes can be asynchronous.
+2.	
+Props are immutable.
+State is mutable.
+3.	
+Props allow you to pass data from one component to other components as an argument.	
+State holds information about the components.
+4.	
+Props can be accessed by the child component.	
+State cannot be accessed by child components.
+5.	
+Props are used to communicate between components.	
+States can be used for rendering dynamic changes with the component.
+6.	S
+tateless component can have Props.	
+Stateless components cannot have State.
+7.	
+Props make components reusable.	
+State cannot make components reusable.
+8.	
+Props are external and controlled by whatever renders the component.	
+The State is internal and controlled by the React Component itself.
+
+
+
 #### What are the different lifecycle methods?
 - `componentWillMount` (deprecated) - this is most commonly used for App configuration in your root component. 
 - `componentDidMount` - here you want to do all the setup you couldn’t do without a DOM, and start getting all the data you need. Also if you want to set up eventListeners etc. this lifecycle hook is a good place to do that.
@@ -71,6 +100,9 @@ Props (short for properties) are a Component's configuration. They are received 
 - `componentWillUpdate` (deprecated) - rarely used. It can be used instead of `componentWillReceiveProps` on a component that also has `shouldComponentUpdate` (but no access to previous props).
 - `componentDidUpdate` - also commonly used to update the DOM in response to prop or state changes.
 - `componentWillUnmount` - enables you can cancel any outgoing network requests, or remove all event listeners associated with the component.
+
+for more info refer here(#https://reactjs.org/docs/glossary.html#lifecycle-methods)
+
 
 #### React Hooks
 Hooks let you use more of React’s features without having to use classes.
