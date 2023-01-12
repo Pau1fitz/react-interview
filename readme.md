@@ -44,8 +44,8 @@ React creates a virtual DOM. When state changes in a component it firstly runs a
 - It is easy to know how a component is rendered, you just need to look at the render function.
 - JSX makes it easy to read the code of your components. It is also really easy to see the layout, or how components are plugged/combined with each other.
 - You can render React on the server-side. This improves SEO and performance.
-- It is easy to test.
 - You can use React with any framework you wish as it is only a view layer.
+- It is easy to test.
 
 #### What is the difference between a Presentational component and a Container component?
 Presentational components are concerned with how things look. They generally receive data and callbacks exclusively via props. These components rarely have their own state, but when they do it generally concerns UI state, as opposed to data state.
